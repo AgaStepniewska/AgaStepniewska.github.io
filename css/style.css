@@ -6,24 +6,6 @@ body {
   margin: 0 auto;
   font-family: "Raleway", sans-serif; }
 
-h1 {
-  text-transform: uppercase;
-  max-width: 90%;
-  font-size: 5vh;
-  margin: 2% auto 2%;
-  text-align: left;
-  padding-top: 2%;
-  color: #fff; }
-
-a {
-  text-decoration: none;
-  color: #fff; }
-
-.backgroundset, .parallax, #portfolio .contain .img {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
 body,
 html {
   height: 100vh; }
@@ -76,8 +58,26 @@ html {
   display: table;
   clear: both; }
 
+h1 {
+  text-transform: uppercase;
+  max-width: 90%;
+  font-size: 5vh;
+  margin: 2% auto 2%;
+  text-align: left;
+  padding-top: 2%;
+  color: #fff; }
+
+a {
+  text-decoration: none;
+  color: #fff; }
+
+.backgroundset, .parallax, #portfolio .contain .img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 .parallax {
-  background-image: url(DSC_0798.jpg);
+  background-image: url(https://images84.fotosik.pl/717/6a5a84b5003b7c61.jpg);
   min-height: 100vh;
   background-attachment: fixed; }
 
