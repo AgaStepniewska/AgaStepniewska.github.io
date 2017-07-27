@@ -92,7 +92,8 @@ a {
   .hero .slogan {
     min-height: 50vh;
     min-width: 80%;
-    text-align: center; }
+    text-align: center;
+    margin: auto; }
     .hero .slogan h1 {
       font-size: 8vh;
       text-align: center; }
@@ -102,20 +103,18 @@ a {
       font-size: 3vh; }
     .hero .slogan .front {
       font-size: 5vh; }
-    .hero .slogan .btn {
-      display: inline-block; }
-      .hero .slogan .btn button {
-        width: 100px;
-        height: 40px;
-        text-transform: uppercase;
-        border-radius: 5%;
-        border-width: 0;
-        cursor: pointer;
-        background-color: #4d6b07;
-        box-shadow: 4px 6px 20px 6px rgba(0, 0, 0, 0.8);
-        margin-left: 10px; }
-        .hero .slogan .btn button:hover {
-          transform: scale(1.1); }
+    .hero .slogan .btn button {
+      width: 100px;
+      height: 40px;
+      text-transform: uppercase;
+      border-radius: 5%;
+      border-width: 0;
+      cursor: pointer;
+      background-color: #4d6b07;
+      box-shadow: 4px 6px 20px 6px rgba(0, 0, 0, 0.8);
+      margin-left: 10px; }
+      .hero .slogan .btn button:hover {
+        transform: scale(1.1); }
 
 #aboutme,
 #techskills,
@@ -202,6 +201,10 @@ a {
       max-width: 10%;
       max-height: 10%;
       padding: 1% 2%; }
+    #techskills .logowell .icon-css {
+      max-width: 12%;
+      max-height: 12%;
+      padding: 0; }
     #techskills .logowell .icon-sass {
       padding: 2% 2%; }
     #techskills .logowell .icon-js {
@@ -253,44 +256,38 @@ a {
 #footer {
   min-height: 20vh;
   background-color: rgba(0, 0, 0, 0.6);
-  color: #fff; }
+  color: #fff;
+  width: 100%; }
   #footer .footerrow {
-    max-width: 70%;
+    max-width: 90%;
     margin: auto; }
-  #footer .contact {
-    max-width: 70%;
-    text-align: center;
-    margin: 1% auto; }
-    #footer .contact h1 {
+    #footer .footerrow h1 {
       text-align: center;
       font-size: 4vh;
       margin-bottom: 3%; }
-    #footer .contact p {
-      margin: 1%; }
-    #footer .contact .fa {
+    #footer .footerrow p {
+      margin: 0; }
+    #footer .footerrow .fa {
       font-size: 28px;
       padding: 3px;
       color: #4d6b07;
       margin: 2% 1%; }
-    #footer .contact .cv {
+    #footer .footerrow .cv {
       color: #4d6b07;
       font-size: 25px;
       font-weight: 700;
       cursor: pointer;
       margin: 2% 1%; }
   #footer .madeby {
-    font-family: "Raleway", sans-serif;
     font-weight: 400;
     font-size: 15px;
-    text-align: center; }
+    margin-top: 3%; }
     #footer .madeby p {
-      margin: auto;
-      max-width: 80%; }
-    #footer .madeby .top {
-      margin-top: 8%; }
+      margin: 3px; }
     #footer .madeby .fa-heart {
       color: #e94949;
-      font-size: 15px; }
+      font-size: 15px;
+      margin: 2% auto 0; }
     #footer .madeby a {
       color: #4d6b07; }
       #footer .madeby a:hover {
@@ -389,6 +386,15 @@ a {
   .col-s-12 {
     width: 100%; }
 
+  #top .slogan {
+    max-width: 90%; }
+  #top .btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    #top .btn button {
+      margin-top: 10px; }
+
   #aboutme .about .zdjeciecv {
     max-width: 30%;
     height: 35vh; }
@@ -399,4 +405,8 @@ a {
   #aboutme .about p {
     width: 94%;
     font-size: 13px;
-    margin: 2% 4%; } }
+    margin: 2% 4%; }
+
+  #footer .contact,
+  #footer .madeby {
+    max-width: 100%; } }

@@ -84,6 +84,7 @@ a
 		min-height: 50vh
 		min-width: 80%
 		text-align: center
+		margin: auto
 		h1
 			font-size: 8vh
 			text-align: center
@@ -94,7 +95,6 @@ a
 		.front
 			font-size: 5vh
 		.btn
-			display: inline-block
 			button
 				width: 100px
 				height: 40px
@@ -192,6 +192,10 @@ a
 			max-width: 10%
 			max-height: 10%
 			padding: 1% 2%
+		.icon-css
+			max-width: 12%
+			max-height: 12%
+			padding: 0
 		.icon-sass
 			padding: 2% 2%
 		.icon-js
@@ -245,50 +249,44 @@ a
 	min-height: 20vh
 	background-color: rgba(0,0,0, 0.6)
 	color: $color2
+	width: 100%
+
 	.footerrow
-		max-width: 70%
+		max-width: 90%
 		margin: auto
-	.contact
-		max-width: 70%
-		text-align: center
-		margin: 1% auto
 		h1
 			text-align: center
 			font-size: 4vh
 			margin-bottom: 3%
 		p
-			margin: 1% 
+			margin: 0
 		.fa
 			font-size: 28px
 			padding: 3px
 			color: $color1
 			margin: 2% 1%	
+			
 		.cv
 			color: $color1
 			font-size: 25px
 			font-weight: 700
 			cursor: pointer
 			margin: 2% 1%
-
-			
 	.madeby
-		font-family: $font1
 		font-weight: 400
 		font-size: 15px
-		text-align: center
+		margin-top: 3%
 		p
-			margin: auto
-			max-width: 80%
-		.top
-			margin-top: 8%
+			margin: 3px
 		.fa-heart
 			color: #e94949
 			font-size: 15px
+			margin: 2% auto 0
 		a
 			color: $color1
 			&:hover
 				text-decoration: underline
-	
+		
 #BtnToTop
 	display: none
 	position: fixed
@@ -360,6 +358,17 @@ a
 		width: 91.66%
 	.col-s-12 
 		width: 100%
+	
+	#top
+		.slogan
+			max-width: 90%
+		.btn
+			display: flex
+			flex-direction: column
+			align-items: center
+			button
+				margin-top: 10px
+
 	#aboutme
 		.about
 			.zdjeciecv
@@ -373,4 +382,8 @@ a
 				width: 94%
 				font-size: 13px
 				margin: 2% 4% 
+	#footer
+		.contact,
+		.madeby
+			max-width: 100%
 				
