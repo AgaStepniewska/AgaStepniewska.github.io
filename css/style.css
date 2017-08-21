@@ -334,9 +334,11 @@ nav, input, label {
   nav {
     display: -webkit-flex;
     display: flex;
-    max-width: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
     min-height: 10vh;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
     padding-left: 5%;
     border-bottom: 1px solid #4d6b07; }
     nav ul {
