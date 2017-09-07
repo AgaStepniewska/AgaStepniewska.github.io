@@ -15,8 +15,9 @@ $(function() {
 	window.onscroll = function() {
 		scrollFunction();
 	};
-	var btnClick = $('#BtnToTop')
+	var btnClick = $('#BtnToTop');
 	var btnElem = document.getElementById("BtnToTop");
+	var duration = 1200; 
 	function scrollFunction() {
 		if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
 	    btnElem.style.display = "block";
@@ -24,8 +25,12 @@ $(function() {
 		btnElem.style.display = "none";
 		}
 	};
-	btnClick.click(function() {
-		document.body.scrollTop = 0; 
-	    document.documentElement.scrollTop = 0;
-	});
+	btnClick.click(function(event) {
+		event.preventDefault();
+		$('html, body').animate({scrollTop: 0}, duration);
+		
+	})
 });
+
+
+
