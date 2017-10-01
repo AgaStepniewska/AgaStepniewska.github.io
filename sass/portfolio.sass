@@ -72,14 +72,14 @@ a
 	min-height: 100vh
 	background-attachment: fixed
 	@extend .backgroundset
+	.nav
+		input[type="checkbox"] + label 
+			font-size: 25px
+			cursor: pointer
+			color: $color2
 
-input[type="checkbox"] + label 
-	font-size: 25px
-	cursor: pointer
-	color: $color2
-
-nav, input, label
-	display: none
+		nav, input, label
+			display: none
 .hero
 	max-width: 100%
 	height: 100vh
@@ -297,6 +297,34 @@ nav, input, label
 			border-radius: 15%
 			&:hover
 				background-color: $color2
+
+#contactForm
+	width: 400px
+	margin: 0 auto
+	background-color: #fff
+	border: 2px solid #ccc
+	border-radius: 10px
+	padding: 20px
+	margin-top: 20px
+	label
+		display: block
+		margin-bottom: 5px
+		
+		font-size: 12px
+		color: #555555
+	
+	input
+		padding: 5px
+		border-radius: 3px
+		border: 1px solid black
+		background-color: red
+		margin-bottom: 25px
+		width: 245px
+		#submit
+			width: 255px
+			cursor: pointer
+			margin-bottom: 0
+
 #footer
 	min-height: 20vh
 	background-color: rgba(0,0,0, 0.6)
@@ -312,6 +340,9 @@ nav, input, label
 			margin-bottom: 3%
 		p
 			margin: 0
+		.mail
+			&:hover
+				text-decoration: underline
 		.fa
 			font-size: 28px
 			padding: 3px
@@ -423,41 +454,42 @@ nav, input, label
 		width: 100%
 	.parallax
 		background-attachment: scroll
-	nav
-		display: -webkit-flex
-		display: flex
-		width: 100%
-		min-height: 10vh
-		background-color: rgba(0,0,0, 0.8)
-		padding-left: 5%
-		border-bottom: 1px solid $color1
-		ul
-			min-width: 90%
-			margin-top: 6%
-			margin-left: 3%
-			-webkit-transition: 1s
-			transition: 1s
-			list-style-type: none
-			padding: 0
-			li
-				max-width: 80%
-				font-size: 15px
-				float: none
-				margin-left: 0
+		.nav
+			nav
+				display: -webkit-flex
+				display: flex
+				width: 100%
+				min-height: 10vh
+				background-color: rgba(0,0,0, 0.8)
+				padding-left: 5%
+				border-bottom: 1px solid $color1
+				ul
+					min-width: 90%
+					margin-top: 6%
+					margin-left: 3%
+					-webkit-transition: 1s
+					transition: 1s
+					list-style-type: none
+					padding: 0
+					li
+						max-width: 80%
+						font-size: 15px
+						float: none
+						margin-left: 0
+						margin-right: 5%
+						margin-bottom: 2%
+						padding: 2%
+						text-align: center
+						border: 1px solid $color1
+						box-shadow: 4px 6px 20px 6px rgba(0,0,0,0.8)
+						&:hover
+							background-color: $color1
+							transform: scale(1.03)
+			label 
+				display: block
 				margin-right: 5%
-				margin-bottom: 2%
-				padding: 2%
-				text-align: center
-				border: 1px solid $color1
-				box-shadow: 4px 6px 20px 6px rgba(0,0,0,0.8)
-				&:hover
-					background-color: $color1
-					transform: scale(1.03)
-	label 
-		display: block
-		margin-right: 5%
-		margin-top: 2%
-		text-align: right
+				margin-top: 2%
+				text-align: right
 	#top
 		.slogan
 			ul

@@ -81,14 +81,12 @@ a {
   background-image: url(https://images84.fotosik.pl/717/6a5a84b5003b7c61.jpg);
   min-height: 100vh;
   background-attachment: fixed; }
-
-input[type="checkbox"] + label {
-  font-size: 25px;
-  cursor: pointer;
-  color: #fff; }
-
-nav, input, label {
-  display: none; }
+  .parallax .nav input[type="checkbox"] + label {
+    font-size: 25px;
+    cursor: pointer;
+    color: #fff; }
+  .parallax .nav nav, .parallax .nav input, .parallax .nav label {
+    display: none; }
 
 .hero {
   max-width: 100%;
@@ -298,6 +296,31 @@ nav, input, label {
     #portfolio .container i:hover {
       background-color: #fff; }
 
+#contactForm {
+  width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px; }
+  #contactForm label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #555555; }
+  #contactForm input {
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid black;
+    background-color: red;
+    margin-bottom: 25px;
+    width: 245px; }
+    #contactForm input #submit {
+      width: 255px;
+      cursor: pointer;
+      margin-bottom: 0; }
+
 #footer {
   min-height: 20vh;
   background-color: rgba(0, 0, 0, 0.6);
@@ -312,6 +335,8 @@ nav, input, label {
       margin-bottom: 3%; }
     #footer .footerrow p {
       margin: 0; }
+    #footer .footerrow .mail:hover {
+      text-decoration: underline; }
     #footer .footerrow .fa {
       font-size: 28px;
       padding: 3px;
@@ -443,43 +468,41 @@ nav, input, label {
 
   .parallax {
     background-attachment: scroll; }
-
-  nav {
-    display: -webkit-flex;
-    display: flex;
-    width: 100%;
-    min-height: 10vh;
-    background-color: rgba(0, 0, 0, 0.8);
-    padding-left: 5%;
-    border-bottom: 1px solid #4d6b07; }
-    nav ul {
-      min-width: 90%;
-      margin-top: 6%;
-      margin-left: 3%;
-      -webkit-transition: 1s;
-      transition: 1s;
-      list-style-type: none;
-      padding: 0; }
-      nav ul li {
-        max-width: 80%;
-        font-size: 15px;
-        float: none;
-        margin-left: 0;
-        margin-right: 5%;
-        margin-bottom: 2%;
-        padding: 2%;
-        text-align: center;
-        border: 1px solid #4d6b07;
-        box-shadow: 4px 6px 20px 6px rgba(0, 0, 0, 0.8); }
-        nav ul li:hover {
-          background-color: #4d6b07;
-          transform: scale(1.03); }
-
-  label {
-    display: block;
-    margin-right: 5%;
-    margin-top: 2%;
-    text-align: right; }
+    .parallax .nav nav {
+      display: -webkit-flex;
+      display: flex;
+      width: 100%;
+      min-height: 10vh;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding-left: 5%;
+      border-bottom: 1px solid #4d6b07; }
+      .parallax .nav nav ul {
+        min-width: 90%;
+        margin-top: 6%;
+        margin-left: 3%;
+        -webkit-transition: 1s;
+        transition: 1s;
+        list-style-type: none;
+        padding: 0; }
+        .parallax .nav nav ul li {
+          max-width: 80%;
+          font-size: 15px;
+          float: none;
+          margin-left: 0;
+          margin-right: 5%;
+          margin-bottom: 2%;
+          padding: 2%;
+          text-align: center;
+          border: 1px solid #4d6b07;
+          box-shadow: 4px 6px 20px 6px rgba(0, 0, 0, 0.8); }
+          .parallax .nav nav ul li:hover {
+            background-color: #4d6b07;
+            transform: scale(1.03); }
+    .parallax .nav label {
+      display: block;
+      margin-right: 5%;
+      margin-top: 2%;
+      text-align: right; }
 
   #top .slogan ul {
     display: none; }
